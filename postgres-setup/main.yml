@@ -1,6 +1,6 @@
 ---
 - name: Install PostgreSQL on Debian-based systems
-  hosts: debian_servers
+  hosts: postgres_servers
   become: yes
 
   tasks:
