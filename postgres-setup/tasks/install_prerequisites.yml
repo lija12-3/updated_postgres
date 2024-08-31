@@ -1,0 +1,8 @@
+# File: install_prerequisites.yml
+---
+- name: Install prerequisites (curl and ca-certificates)
+  apt:
+    name:
+      - curl
+      - ca-certificates
+    state: present
