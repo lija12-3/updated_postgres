@@ -1,0 +1,6 @@
+# File: install_postgresql.yml
+---
+- name: Install PostgreSQL
+  apt:
+    name: postgresql
+    state: present
