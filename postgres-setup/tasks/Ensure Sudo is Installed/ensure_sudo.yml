@@ -1,0 +1,6 @@
+# File: ensure_sudo.yml
+---
+- name: Ensure sudo is installed
+  apt:
+    name: sudo
+    state: present
