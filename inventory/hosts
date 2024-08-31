@@ -1,0 +1,4 @@
+[postgres-setup]
+your_host1 ansible_host=your_host1_ip
+your_host2 ansible_host=your_host2_ip
+...
