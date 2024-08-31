@@ -1,0 +1,19 @@
+---
+- name: Install PostgreSQL on Debian-based systems
+  hosts: debian_servers
+  become: yes
+
+  tasks:
+  - include_tasks: install_prerequisites.yml
+  - include_tasks: ensure_sudo.yml
+  - include_tasks: install_postgresql_common.yml
+  - include_tasks: ensure_pgdg_directory.yml
+  - include_tasks: download_postgresql_key.yml
+  - include_tasks: add_postgresql_repository.yml
+  - include_tasks: update_apt_cache.yml
+  - include_tasks: install_postgresql.yml
+  - include_tasks: display_postgresql_version.yml
+  - include_tasks: print_postgresql_version.yml
+
+  handlers:
+  - include_tasks: restart_postgresql.yml
