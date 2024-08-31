@@ -1,0 +1,4 @@
+---
+- name: Print PostgreSQL version
+  debug:
+    msg: "PostgreSQL version: {{ postgres_version.stdout }}"
