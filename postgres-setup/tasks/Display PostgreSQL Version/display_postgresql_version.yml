@@ -1,0 +1,5 @@
+---
+- name: Display PostgreSQL version
+  command: psql --version
+  register: postgres_version
+  changed_when: false
