@@ -1,6 +1,7 @@
-# File: install_postgresql.yml
 ---
-- name: Install PostgreSQL
-  apt:
-    name: postgresql
-    state: present
+tasks:
+  - name: install postgresql
+    apt:
+      name: postgresql
+      state: present
+    notify: Restart PostgreSQL
