@@ -1,0 +1,6 @@
+---
+- name: Add PostgreSQL APT repository
+  command: >
+    sh -c 'echo "deb [signed-by=/usr/share/postgresql-common/pgdg/apt.postgresql.org.asc] https://apt.postgresql.org/pub/repos/apt {{ ansible_distribution_release }}-pgdg main" > /etc/apt/sources.list.d/pgdg.list'
+  args:
+    creates: /etc/apt/sources.list.d/pgdg.list
