@@ -1,0 +1,6 @@
+# File: install_postgresql_common.yml
+---
+- name: Install postgresql-common package
+  apt:
+    name: postgresql-common
+    state: present
