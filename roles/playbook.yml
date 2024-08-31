@@ -5,7 +5,7 @@
   gather_facts: yes
 
   roles:
-    - Install_Prerequisites
+    - install_Prerequisites
     - Ensure_Sudo_is_Installed
     - Install_PostgreSQL_Common_Package
     - Ensure_PGDG_Directory_Exists
