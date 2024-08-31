@@ -1,0 +1,5 @@
+---
+- name: Ensure the pgdg directory exists
+  file:
+    path: /usr/share/postgresql-common/pgdg
+    state: directory
