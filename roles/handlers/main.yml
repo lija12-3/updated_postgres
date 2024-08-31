@@ -1,5 +1,6 @@
 ---
-- name: Restart PostgreSQL
-  service:
-    name: postgresql
-    state: restarted
+handlers:
+  - name: Restart PostgreSQL
+    service:
+      name: postgresql
+      state: restarted
