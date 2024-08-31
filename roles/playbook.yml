@@ -7,7 +7,7 @@
   roles:
     - Install Prerequisites
     - Ensure Sudo is Installed
-    - Install PostgreSQL Common_Package
+    - Install PostgreSQL Common Package
     - Ensure PGDG Directory Exists
     - Download PostgreSQL Repository_Key
     - Add PostgreSQL APT Repository
