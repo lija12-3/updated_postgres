@@ -1,4 +1,4 @@
-[postgres-servers]
+[postgres_servers]
 posgres1 ansible_host=172.31.13.102
 
 ...
