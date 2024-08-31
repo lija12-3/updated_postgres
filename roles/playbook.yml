@@ -16,8 +16,4 @@
     - Display PostgreSQL Version
     - Print PostgreSQL Version
 
-  handlers:
-    - name: Restart PostgreSQL
-      service:
-        name: postgresql
-        state: restarted
+
