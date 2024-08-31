@@ -1,7 +1,6 @@
-tasks:
-  - name: install postgresql
-    apt:
-      name: postgresql
-      state: present
-    notify: Restart PostgreSQL
-
+---
+- name: Install PostgreSQL
+  apt:
+    name: postgresql
+    state: present
+  notify: Restart PostgreSQL
