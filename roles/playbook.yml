@@ -6,15 +6,15 @@
 
   roles:
     - Install Prerequisites
-    - Ensure_Sudo_is_Installed
-    - Install_PostgreSQL_Common_Package
-    - Ensure_PGDG_Directory_Exists
-    - Download_PostgreSQL_Repository_Key
-    - Add_PostgreSQL_APT_Repository
-    - Update_APT_Cache
-    - Install_PostgreSQL
-    - Display_PostgreSQL_Version
-    - Print_PostgreSQL_Version
+    - Ensure Sudo is Installed
+    - Install PostgreSQL Common_Package
+    - Ensure PGDG Directory Exists
+    - Download PostgreSQL Repository_Key
+    - Add PostgreSQL APT Repository
+    - Update APT Cache
+    - Install PostgreSQL
+    - Display PostgreSQL Version
+    - Print PostgreSQL Version
 
   handlers:
     - name: Restart PostgreSQL
